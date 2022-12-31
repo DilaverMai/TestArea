@@ -1,42 +1,32 @@
 using Unity.VisualScripting;
 using UnityEngine;
 
-public class FindCloserObjectWithTag : Unit
+[UnitCategory("Finders/Mono")]
+public abstract class FindCloserObjectWithTagUnit : Unit
 {
     public ControlInput inputTrigger;
     public ControlOutput outputTrigger;
+
+    public ValueInput Tag;
     
     public ValueOutput CloserObjectt;
-    public ValueInput ThisTransform;
     
     public ControlInput findCloserObject;
     public  ControlOutput closerObjectFound; 
     
     protected override void Definition()
     {
-        inputTrigger = ControlInput("inputTrigger", Deneme);
-        ThisTransform = ValueInput<Transform>("ThisTransform",default);
-    }
-
-    public override void Instantiate(GraphReference instance)
-    {
-        base.Instantiate(instance);
-       
-        var _flow = Flow.New(instance);
-
-        if (_flow.GetValue<Transform>(ThisTransform) == null)
-            ThisTransform.SetDefaultValue(_flow.stack.component.transform);
+        inputTrigger = ControlInput("inputTrigger", Finder);
+        Tag = ValueInput("Tag", "Enemy");
     }
     
-    private ControlOutput Deneme(Flow arg)
+    private ControlOutput Finder(Flow arg)
     {
-        GetCloserObject(arg.stack.component.transform);
-        return null;
+        var thisTransform = arg.stack.gameObject.transform;
+        var enemies = GameObject.FindGameObjectsWithTag(arg.GetValue<string>(Tag));
+        thisTransform.FindCloserGameObjectByTag(enemies);
+        
+        return outputTrigger;
     }
-
-    private GameObject GetCloserObject(Transform tt)
-    {
-        Debug.Log(tt.name);
-        return null;
-    }
+    
 }

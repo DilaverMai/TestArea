@@ -15,11 +15,12 @@ public abstract class MoveUnit : Unit
     public ValueInput Speed;
     public ValueInput MinDistance;
     public ValueInput MaxDistance;
-    
+
     [ExecuteAlways]
     [DoNotSerialize]
     public ValueOutput NowPosition{ get; private set; }
     public ValueOutput IsArrive{ get; private set; }
+    public ValueOutput TargetOut{ get; private set; }
     protected bool _isArrive;
     
     protected virtual void Setup()
@@ -36,6 +37,7 @@ public abstract class MoveUnit : Unit
         
         NowPosition = ValueOutput("CurrentPosition", MoveToPosition);
         IsArrive = ValueOutput<bool>("IsArrive",(x)=>_isArrive);
+        TargetOut = ValueOutput<Vector3>("TargetOut", (x)=> x.GetValue<Vector3>(TargetPosition));
     }
     
     protected override void Definition()
