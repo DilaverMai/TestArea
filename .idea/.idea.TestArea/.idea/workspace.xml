@@ -1,17 +1,53 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="3a57799f-2669-41fa-8ca8-fb37cc71042c" name="Changes" comment="" />
+    <list default="true" id="3a57799f-2669-41fa-8ca8-fb37cc71042c" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.TestArea/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TestArea/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AI.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AI.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FindCloserObjectWithTag.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FindCloserObjectWithTag.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FindObjectExtensions.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FindObjectExtensions.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MoveAI.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MoveAI.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MoveLerp.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MoveLerp.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MoveMoveTowards.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MoveMoveTowards.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MoveUnit.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MoveUnit.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MoveWithRigidBody.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MoveWithRigidBody.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/RotationTargetRigidBody.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/RotationTargetRigidBody.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/RotationToTarget.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/RotationToTarget.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/RotationToTargetUnit.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/RotationToTargetUnit.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Test.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UnitExtensions.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UnitExtensions.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Unity.VisualScripting.Generated/VisualScripting.Flow/UnitOptions.db" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Unity.VisualScripting.Generated/VisualScripting.Flow/UnitOptions.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/VisualScriptingSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/VisualScriptingSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/CurrentMaximizeLayout.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/CurrentMaximizeLayout.dwlt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Assets/FindCloserObjectWithTag.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/MoveAI.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/RotationToTarget.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/RotationToTargetUnit.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/9d3d0b5eea2149139d21af730ecd911826e00/2f/5df342e3/Animator.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/bae255e3e08e46f7bc2fbd23dde96338158800/5d/81752d2b/MonoBehaviour.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/9384495d2a482ac7341d67ca84e16d267d16c62458a9d67a92b119199a9/System.Threading.Tasks.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Visual Scripting/AttackUnit.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.visualscripting@1.7.8/Runtime/VisualScripting.Core/Graphs/GraphElement.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.visualscripting@1.7.8/Runtime/VisualScripting.Core/Reflection/Optimization/StaticActionInvoker_1.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.visualscripting@1.7.8/Runtime/VisualScripting.Flow/Flow.cs" root0="SKIP_HIGHLIGHTING" />
@@ -21,39 +57,43 @@
     <setting file="file://$PROJECT_DIR$/../mp057_increasetheheight/Assets/Increaset The Height/Scripts/Runtime/ArcherAttackSystem.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../mp057_increasetheheight/Assets/Increaset The Height/Scripts/Runtime/Arrow.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../mp057_increasetheheight/Assets/Increaset The Height/Scripts/Runtime/Tower.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/8fe25d94de084d8eb9667504f9cab784cc00/0b/5315347d/NavMeshAgent.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/e427d768e8114b6084eba80353a4aeb3158800/2d/358295bd/GameObject.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/e427d768e8114b6084eba80353a4aeb3158800/c9/ac913c88/Vector3.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2JaW0zp37BRU6OHm1Xs4IPO1thc" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Discover.Launch.Via.Unity": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "do_not_show_Android_plugin_suggestion": "true",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Discover.Launch.Via.Unity&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;do_not_show_Android_plugin_suggestion&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "rider.external.source.directories": [
-      "/Users/dilaverserif/Library/Application Support/JetBrains/Rider2022.3/resharper-host/DecompilerCache",
-      "/Users/dilaverserif/Library/Application Support/JetBrains/Rider2022.3/resharper-host/SourcesCache",
-      "/Users/dilaverserif/.local/share/Symbols/src"
+  &quot;keyToStringList&quot;: {
+    &quot;rider.external.source.directories&quot;: [
+      &quot;C:\\Users\\dilav\\AppData\\Roaming\\JetBrains\\Rider2022.3\\resharper-host\\DecompilerCache&quot;,
+      &quot;C:\\Users\\dilav\\AppData\\Roaming\\JetBrains\\Rider2022.3\\resharper-host\\SourcesCache&quot;,
+      &quot;C:\\Users\\dilav\\AppData\\Local\\Symbols\\src&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
     <configuration name="Start Unity" type="RunUnityExe" factoryName="Unity Executable">
-      <option name="EXE_PATH" value="/Applications/Unity/Hub/Editor/2021.3.14f1/Unity.app/Contents/MacOS/Unity" />
+      <option name="EXE_PATH" value="C:\Program Files\Unity\Hub\Editor\2021.3.14f1\Editor\Unity.exe" />
       <option name="PROGRAM_PARAMETERS" value="-projectPath $PROJECT_DIR$ -debugCodeOptimization" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="PASS_PARENT_ENVS" value="1" />
@@ -61,7 +101,7 @@
       <method v="2" />
     </configuration>
     <configuration name="UnitTests (batch mode)" type="RunUnityExe" factoryName="Unity Executable">
-      <option name="EXE_PATH" value="/Applications/Unity/Hub/Editor/2021.3.14f1/Unity.app/Contents/MacOS/Unity" />
+      <option name="EXE_PATH" value="C:\Program Files\Unity\Hub\Editor\2021.3.14f1\Editor\Unity.exe" />
       <option name="PROGRAM_PARAMETERS" value="-runTests -batchmode -projectPath $PROJECT_DIR$ -testResults Logs/results.xml -testPlatform EditMode -debugCodeOptimization" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="PASS_PARENT_ENVS" value="1" />
@@ -100,14 +140,30 @@
       <workItem from="1672316456371" duration="4451000" />
       <workItem from="1672387438703" duration="2922000" />
       <workItem from="1672435594451" duration="7032000" />
+      <workItem from="1672479096368" duration="7192000" />
+      <workItem from="1672526914919" duration="2265000" />
+      <workItem from="1672529217751" duration="913000" />
+      <workItem from="1672569829671" duration="4317000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="UnityCheckinConfiguration" checkUnsavedScenes="true" />
   <component name="UnityProjectConfiguration" hasMinimizedUI="true" />
   <component name="UnityUnitTestConfiguration" currentTestLauncher="EditMode" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
   </component>
