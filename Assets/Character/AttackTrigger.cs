@@ -7,7 +7,7 @@ namespace Character
         public Attacker attacker;
         private void OnTriggerEnter(Collider other)
         {
-            if (other.TryGetComponent<Health>(out var health))
+            if (other.TryGetComponent<HealthSystem>(out var health))
             {
                 attacker.Attack(health);
             }

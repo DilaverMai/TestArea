@@ -4,4 +4,9 @@ namespace Character
     {
         void Initialize();
     }
+    
+    public interface IInitializabler
+    {
+        void AllRunInitialize();
+    }
 }

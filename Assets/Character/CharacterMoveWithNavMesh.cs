@@ -3,9 +3,11 @@ using UnityEngine.AI;
 
 namespace Character
 {
+    [RequireComponent((typeof(NavMeshAgent)))]
     [System.Serializable]
-    public class CharacterMoveWithNavMesh: IInitializable,IMoveable
+    public class CharacterMoveWithNavMesh:MonoBehaviour, IInitializable, IMoveable
     {
+        public BehaviourTree BehaviourTree;
         public MoveData MoveData;
         public NavMeshAgent NavAgent;
     

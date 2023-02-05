@@ -4,7 +4,32 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3a57799f-2669-41fa-8ca8-fb37cc71042c" name="Changes" comment="" />
+    <list default="true" id="3a57799f-2669-41fa-8ca8-fb37cc71042c" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Assets/Character/BehaviourNode.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Character/BehaviourNode.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Character/BehaviourTree.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Character/BehaviourTree.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Character/EnemyAnimationSystem.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Character/EnemyAnimationSystem.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Character/ParticleAnim.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Character/ParticleAnim.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.TestArea/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TestArea/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Character/AttackTrigger.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Character/AttackTrigger.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Character/Attacker.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Character/Attacker.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Character/CharacterAnimation.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Character/CharacterAnimationSystem.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Character/CharacterAnimation.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Character/CharacterAnimationSystem.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Character/CharacterMoveWithNavMesh.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Character/CharacterMoveWithNavMesh.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Character/Health.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Character/HealthSystem.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Character/Health.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Character/HealthSystem.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Character/IAnimable.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Character/IAnimable.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Character/IDamageable.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Character/IDamageable.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Character/IInitializable.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Character/IInitializable.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Character/StandartEnemy.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Character/StandartEnemy.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Test.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/VisualScriptingSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/VisualScriptingSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -18,9 +43,6 @@
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.visualscripting@1.7.8/Runtime/VisualScripting.Flow/Framework/Control/ToggleValue.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.visualscripting@1.7.8/Runtime/VisualScripting.Flow/Ports/ValueInput.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.visualscripting@1.7.8/Runtime/VisualScripting.Flow/Unit.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/../mp057_increasetheheight/Assets/Increaset The Height/Scripts/Runtime/ArcherAttackSystem.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/../mp057_increasetheheight/Assets/Increaset The Height/Scripts/Runtime/Arrow.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/../mp057_increasetheheight/Assets/Increaset The Height/Scripts/Runtime/Tower.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -49,15 +71,15 @@
   },
   &quot;keyToStringList&quot;: {
     &quot;rider.external.source.directories&quot;: [
-      &quot;/Users/dilaverserif/Library/Application Support/JetBrains/Rider2022.3/resharper-host/DecompilerCache&quot;,
-      &quot;/Users/dilaverserif/Library/Application Support/JetBrains/Rider2022.3/resharper-host/SourcesCache&quot;,
-      &quot;/Users/dilaverserif/.local/share/Symbols/src&quot;
+      &quot;C:\\Users\\dilav\\AppData\\Roaming\\JetBrains\\Rider2022.3\\resharper-host\\DecompilerCache&quot;,
+      &quot;C:\\Users\\dilav\\AppData\\Roaming\\JetBrains\\Rider2022.3\\resharper-host\\SourcesCache&quot;,
+      &quot;C:\\Users\\dilav\\AppData\\Local\\Symbols\\src&quot;
     ]
   }
 }</component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
     <configuration name="Start Unity" type="RunUnityExe" factoryName="Unity Executable">
-      <option name="EXE_PATH" value="/Applications/Unity/Hub/Editor/2021.3.14f1/Unity.app/Contents/MacOS/Unity" />
+      <option name="EXE_PATH" value="C:\Program Files\Unity\Hub\Editor\2021.3.14f1\Editor\Unity.exe" />
       <option name="PROGRAM_PARAMETERS" value="-projectPath $PROJECT_DIR$ -debugCodeOptimization" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="PASS_PARENT_ENVS" value="1" />
@@ -65,7 +87,7 @@
       <method v="2" />
     </configuration>
     <configuration name="UnitTests (batch mode)" type="RunUnityExe" factoryName="Unity Executable">
-      <option name="EXE_PATH" value="/Applications/Unity/Hub/Editor/2021.3.14f1/Unity.app/Contents/MacOS/Unity" />
+      <option name="EXE_PATH" value="C:\Program Files\Unity\Hub\Editor\2021.3.14f1\Editor\Unity.exe" />
       <option name="PROGRAM_PARAMETERS" value="-runTests -batchmode -projectPath $PROJECT_DIR$ -testResults Logs/results.xml -testPlatform EditMode -debugCodeOptimization" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="PASS_PARENT_ENVS" value="1" />
@@ -113,6 +135,10 @@
       <workItem from="1672667684507" duration="747000" />
       <workItem from="1672687048713" duration="3308000" />
       <workItem from="1675323027538" duration="13314000" />
+      <workItem from="1675618252184" duration="2374000" />
+      <workItem from="1675620668891" duration="50000" />
+      <workItem from="1675636432314" duration="296000" />
+      <workItem from="1675636747613" duration="42000" />
     </task>
     <servers />
   </component>
