@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: AttackerData
   m_EditorClassIdentifier: 
   Damage: 1
-  AttackSpeed: 1
+  AttackDelay: 1
   AttackRange: 1

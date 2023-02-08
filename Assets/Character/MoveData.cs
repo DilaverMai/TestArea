@@ -6,5 +6,6 @@ namespace Character
     public class MoveData: ScriptableObject
     {
         public float Speed;
+        public float StoppingDistance;
     }
 }

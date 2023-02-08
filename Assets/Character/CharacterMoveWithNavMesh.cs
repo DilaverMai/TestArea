@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.AI;
+using UnityEngine.Events;
 
 namespace Character
 {
@@ -7,23 +8,31 @@ namespace Character
     [System.Serializable]
     public class CharacterMoveWithNavMesh:MonoBehaviour, IInitializable, IMoveable
     {
-        public BehaviourTree BehaviourTree;
         public MoveData MoveData;
         public NavMeshAgent NavAgent;
-    
+        public UnityEvent OnReachedDestination;
+
+        private void Awake()
+        {
+            NavAgent = GetComponent<NavMeshAgent>();
+        }
+
         public void Initialize()
         {
             NavAgent.speed = MoveData.Speed;
+            NavAgent.stoppingDistance = MoveData.StoppingDistance;
         }
 
-        public void Move(Vector3 position)
+        public virtual void Move(Vector3 position)
         {
             NavAgent.SetDestination(position);
         }
-
+        
         public bool ReachedDestination()
         {
+            OnReachedDestination?.Invoke();
             return NavAgent.remainingDistance <= NavAgent.stoppingDistance;
         }
     }
+    
 }

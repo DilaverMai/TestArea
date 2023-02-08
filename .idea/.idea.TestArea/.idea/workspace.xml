@@ -5,29 +5,296 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3a57799f-2669-41fa-8ca8-fb37cc71042c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Character/BehaviourNode.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Character/BehaviourNode.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Character/BehaviourTree.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Character/BehaviourTree.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Character/EnemyAnimationSystem.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Character/EnemyAnimationSystem.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Character/ParticleAnim.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Character/ParticleAnim.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AI.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AI.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Character/Abstracs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Character/Abstracs/Character.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Character/Abstracs/Character.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Character/Abstracs/CharacterAnimationSystem.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Character/Abstracs/CharacterAnimationSystem.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Character/Abstracs/EnemyBase.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Character/Abstracs/EnemyBase.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Character/CharacterMoveWithNavMeshAndRoute.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Character/CharacterMoveWithNavMeshAndRoute.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Character/Datas.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Character/Datas/AttackerData.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Character/Datas/AttackerData.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Character/Datas/ParticleAnim.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Character/Datas/ParticleAnim.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Character/Datas/WayPoint.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Character/Datas/WayPoint.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Character/IUpdater.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Character/IUpdater.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Character/Interfaces.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Character/Interfaces/IAnimable.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Character/Interfaces/IAnimable.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Character/Interfaces/IAttackable.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Character/Interfaces/IAttackable.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Character/Interfaces/IDamageable.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Character/Interfaces/IDamageable.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Character/Interfaces/IFinder.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Character/Interfaces/IFinder.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Character/Interfaces/IInitializable.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Character/Interfaces/IInitializable.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Character/Interfaces/IMoveable.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Character/Interfaces/IMoveable.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Character/Interfaces/IMoveableUnit.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Character/Interfaces/IMoveableUnit.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Character/Interfaces/IRoute.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Character/Interfaces/IRoute.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Character/Player.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Character/Player.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Character/PlayerFinder.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Character/PlayerFinder.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Character/Triggers.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Character/Triggers/AttackTrigger.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Character/Triggers/AttackTrigger.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Character/VisualScripting.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Character/VisualScripting/MoveUnit.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Character/VisualScripting/MoveUnit.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Character/VisualScripting/RouteUnit.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Character/VisualScripting/RouteUnit.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Character/VisualScripting/SearchPlayer.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Character/VisualScripting/SearchPlayer.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Character/VisualScripting/SearchTarget.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Character/VisualScripting/SearchTarget.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Sirenix.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Assemblies.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Assemblies/NoEditor.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Assemblies/NoEditor/Sirenix.Serialization.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Assemblies/NoEditor/Sirenix.Serialization.dll.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Assemblies/NoEditor/Sirenix.Utilities.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Assemblies/NoEditor/Sirenix.Utilities.dll.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Assemblies/NoEmitAndNoEditor.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Assemblies/NoEmitAndNoEditor/Sirenix.Serialization.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Assemblies/NoEmitAndNoEditor/Sirenix.Serialization.dll.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Assemblies/NoEmitAndNoEditor/Sirenix.Utilities.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Assemblies/NoEmitAndNoEditor/Sirenix.Utilities.dll.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Assemblies/Sirenix.OdinInspector.Attributes.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Assemblies/Sirenix.OdinInspector.Attributes.dll.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Assemblies/Sirenix.OdinInspector.Attributes.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Assemblies/Sirenix.OdinInspector.Attributes.xml.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Assemblies/Sirenix.OdinInspector.Editor.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Assemblies/Sirenix.OdinInspector.Editor.dll.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Assemblies/Sirenix.OdinInspector.Editor.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Assemblies/Sirenix.OdinInspector.Editor.xml.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Assemblies/Sirenix.Serialization.Config.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Assemblies/Sirenix.Serialization.Config.dll.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Assemblies/Sirenix.Serialization.Config.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Assemblies/Sirenix.Serialization.Config.xml.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Assemblies/Sirenix.Serialization.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Assemblies/Sirenix.Serialization.dll.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Assemblies/Sirenix.Serialization.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Assemblies/Sirenix.Serialization.xml.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Assemblies/Sirenix.Utilities.Editor.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Assemblies/Sirenix.Utilities.Editor.dll.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Assemblies/Sirenix.Utilities.Editor.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Assemblies/Sirenix.Utilities.Editor.xml.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Assemblies/Sirenix.Utilities.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Assemblies/Sirenix.Utilities.dll.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Assemblies/Sirenix.Utilities.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Assemblies/Sirenix.Utilities.xml.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Assemblies/link.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Assemblies/link.xml.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Odin Inspector.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Odin Inspector/Assets.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Odin Inspector/Assets/Editor.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Odin Inspector/Assets/Editor/Bootstrap License.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Odin Inspector/Assets/Editor/Bootstrap License.txt.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Odin Inspector/Assets/Editor/ConfigData.bytes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Odin Inspector/Assets/Editor/ConfigData.bytes.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Odin Inspector/Assets/Editor/OdinPathLookup.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Odin Inspector/Assets/Editor/OdinPathLookup.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Odin Inspector/Assets/Editor/SdfIconAtlas.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Odin Inspector/Assets/Editor/SdfIconAtlas.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Odin Inspector/Config.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Odin Inspector/Config/Editor.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Odin Inspector/Config/Editor/GeneralDrawerConfig.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Odin Inspector/Config/Editor/GeneralDrawerConfig.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Odin Inspector/Config/Editor/InspectorConfig.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Odin Inspector/Config/Editor/InspectorConfig.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Odin Inspector/Config/Editor/OdinModuleConfig.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Odin Inspector/Config/Editor/OdinModuleConfig.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Odin Inspector/Config/Resources.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Odin Inspector/Config/Resources/Sirenix.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Odin Inspector/Config/Resources/Sirenix/GlobalSerializationConfig.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Odin Inspector/Config/Resources/Sirenix/GlobalSerializationConfig.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Odin Inspector/Modules.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Odin Inspector/Modules/Unity.Entities.data" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Odin Inspector/Modules/Unity.Entities.data.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Odin Inspector/Modules/Unity.Localization.data" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Odin Inspector/Modules/Unity.Localization.data.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Odin Inspector/Modules/Unity.Mathematics.data" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Odin Inspector/Modules/Unity.Mathematics.data.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Odin Inspector/Modules/Unity.Mathematics.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Odin Inspector/Modules/Unity.Mathematics/MathematicsDrawers.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Odin Inspector/Modules/Unity.Mathematics/MathematicsDrawers.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Odin Inspector/Modules/Unity.Mathematics/Sirenix.OdinInspector.Modules.UnityMathematics.asmdef" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Odin Inspector/Modules/Unity.Mathematics/Sirenix.OdinInspector.Modules.UnityMathematics.asmdef.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Odin Inspector/Modules/Unity.Mathematics/manifest.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Odin Inspector/Modules/Unity.Mathematics/manifest.txt.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Readme.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Readme.txt.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Test.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Test/NavMesh.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Test/NavMesh.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Unity.VisualScripting.Generated/VisualScripting.Core.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Unity.VisualScripting.Generated/VisualScripting.Core/Property Providers.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Unity.VisualScripting.Generated/VisualScripting.Core/Property Providers/Editor.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Unity.VisualScripting.Generated/VisualScripting.Core/Property Providers/Editor/PropertyProvider_Cinemachine_CinemachineBrain_BrainEvent.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Unity.VisualScripting.Generated/VisualScripting.Core/Property Providers/Editor/PropertyProvider_Cinemachine_CinemachineBrain_BrainEvent.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Unity.VisualScripting.Generated/VisualScripting.Core/Property Providers/Editor/PropertyProvider_Cinemachine_CinemachineBrain_VcamActivatedEvent.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Unity.VisualScripting.Generated/VisualScripting.Core/Property Providers/Editor/PropertyProvider_Cinemachine_CinemachineBrain_VcamActivatedEvent.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Unity.VisualScripting.Generated/VisualScripting.Core/Property Providers/Editor/PropertyProvider_Cinemachine_CinemachineImpulseDefinition.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Unity.VisualScripting.Generated/VisualScripting.Core/Property Providers/Editor/PropertyProvider_Cinemachine_CinemachineImpulseDefinition.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Unity.VisualScripting.Generated/VisualScripting.Core/Property Providers/Editor/PropertyProvider_Cinemachine_CinemachineImpulseManager_EnvelopeDefinition.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Unity.VisualScripting.Generated/VisualScripting.Core/Property Providers/Editor/PropertyProvider_Cinemachine_CinemachineImpulseManager_EnvelopeDefinition.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Unity.VisualScripting.Generated/VisualScripting.Core/Property Providers/Editor/PropertyProvider_Cinemachine_CinemachineTriggerAction_ActionSettings_TriggerEvent.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Unity.VisualScripting.Generated/VisualScripting.Core/Property Providers/Editor/PropertyProvider_Cinemachine_CinemachineTriggerAction_ActionSettings_TriggerEvent.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Unity.VisualScripting.Generated/VisualScripting.Core/Property Providers/Editor/PropertyProvider_UnityEngine_Experimental_Rendering_Universal_RenderObjects_RenderObjectsSettings.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Unity.VisualScripting.Generated/VisualScripting.Core/Property Providers/Editor/PropertyProvider_UnityEngine_Experimental_Rendering_Universal_RenderObjects_RenderObjectsSettings.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Unity.VisualScripting.Generated/VisualScripting.Core/Property Providers/Editor/PropertyProvider_UnityEngine_Rendering_Universal_StencilStateData.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Unity.VisualScripting.Generated/VisualScripting.Core/Property Providers/Editor/PropertyProvider_UnityEngine_Rendering_Universal_StencilStateData.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Unity.VisualScripting.Generated/VisualScripting.Core/Property Providers/PropertyProvider_TMPro_HorizontalAlignmentOptions.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Unity.VisualScripting.Generated/VisualScripting.Core/Property Providers/PropertyProvider_TMPro_HorizontalAlignmentOptions.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Unity.VisualScripting.Generated/VisualScripting.Core/Property Providers/PropertyProvider_TMPro_TMP_Character.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Unity.VisualScripting.Generated/VisualScripting.Core/Property Providers/PropertyProvider_TMPro_TMP_Character.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Unity.VisualScripting.Generated/VisualScripting.Core/Property Providers/PropertyProvider_TMPro_TMP_Dropdown_DropdownEvent.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Unity.VisualScripting.Generated/VisualScripting.Core/Property Providers/PropertyProvider_TMPro_TMP_Dropdown_DropdownEvent.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Unity.VisualScripting.Generated/VisualScripting.Core/Property Providers/PropertyProvider_TMPro_TMP_Dropdown_OptionDataList.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Unity.VisualScripting.Generated/VisualScripting.Core/Property Providers/PropertyProvider_TMPro_TMP_Dropdown_OptionDataList.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Unity.VisualScripting.Generated/VisualScripting.Core/Property Providers/PropertyProvider_TMPro_TMP_FontWeightPair.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Unity.VisualScripting.Generated/VisualScripting.Core/Property Providers/PropertyProvider_TMPro_TMP_FontWeightPair.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Unity.VisualScripting.Generated/VisualScripting.Core/Property Providers/PropertyProvider_TMPro_TMP_GlyphPairAdjustmentRecord.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Unity.VisualScripting.Generated/VisualScripting.Core/Property Providers/PropertyProvider_TMPro_TMP_GlyphPairAdjustmentRecord.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Unity.VisualScripting.Generated/VisualScripting.Core/Property Providers/PropertyProvider_TMPro_TMP_InputField_OnChangeEvent.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Unity.VisualScripting.Generated/VisualScripting.Core/Property Providers/PropertyProvider_TMPro_TMP_InputField_OnChangeEvent.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Unity.VisualScripting.Generated/VisualScripting.Core/Property Providers/PropertyProvider_TMPro_TMP_InputField_SelectionEvent.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Unity.VisualScripting.Generated/VisualScripting.Core/Property Providers/PropertyProvider_TMPro_TMP_InputField_SelectionEvent.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Unity.VisualScripting.Generated/VisualScripting.Core/Property Providers/PropertyProvider_TMPro_TMP_InputField_SubmitEvent.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Unity.VisualScripting.Generated/VisualScripting.Core/Property Providers/PropertyProvider_TMPro_TMP_InputField_SubmitEvent.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Unity.VisualScripting.Generated/VisualScripting.Core/Property Providers/PropertyProvider_TMPro_TMP_InputField_TextSelectionEvent.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Unity.VisualScripting.Generated/VisualScripting.Core/Property Providers/PropertyProvider_TMPro_TMP_InputField_TextSelectionEvent.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Unity.VisualScripting.Generated/VisualScripting.Core/Property Providers/PropertyProvider_TMPro_TMP_InputField_TouchScreenKeyboardEvent.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Unity.VisualScripting.Generated/VisualScripting.Core/Property Providers/PropertyProvider_TMPro_TMP_InputField_TouchScreenKeyboardEvent.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Unity.VisualScripting.Generated/VisualScripting.Core/Property Providers/PropertyProvider_TMPro_TMP_SpriteCharacter.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Unity.VisualScripting.Generated/VisualScripting.Core/Property Providers/PropertyProvider_TMPro_TMP_SpriteCharacter.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Unity.VisualScripting.Generated/VisualScripting.Core/Property Providers/PropertyProvider_TMPro_TMP_SpriteGlyph.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Unity.VisualScripting.Generated/VisualScripting.Core/Property Providers/PropertyProvider_TMPro_TMP_SpriteGlyph.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Unity.VisualScripting.Generated/VisualScripting.Core/Property Providers/PropertyProvider_TMPro_TMP_Style.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Unity.VisualScripting.Generated/VisualScripting.Core/Property Providers/PropertyProvider_TMPro_TMP_Style.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Unity.VisualScripting.Generated/VisualScripting.Core/Property Providers/PropertyProvider_TMPro_TextAlignmentOptions.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Unity.VisualScripting.Generated/VisualScripting.Core/Property Providers/PropertyProvider_TMPro_TextAlignmentOptions.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Unity.VisualScripting.Generated/VisualScripting.Core/Property Providers/PropertyProvider_TMPro_VerticalAlignmentOptions.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Unity.VisualScripting.Generated/VisualScripting.Core/Property Providers/PropertyProvider_TMPro_VerticalAlignmentOptions.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Unity.VisualScripting.Generated/VisualScripting.Core/Property Providers/PropertyProvider_UnityEngine_EventSystems_EventTrigger_TriggerEvent.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Unity.VisualScripting.Generated/VisualScripting.Core/Property Providers/PropertyProvider_UnityEngine_EventSystems_EventTrigger_TriggerEvent.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Unity.VisualScripting.Generated/VisualScripting.Core/Property Providers/PropertyProvider_UnityEngine_Events_UnityEvent.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Unity.VisualScripting.Generated/VisualScripting.Core/Property Providers/PropertyProvider_UnityEngine_Events_UnityEvent.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Unity.VisualScripting.Generated/VisualScripting.Core/Property Providers/PropertyProvider_UnityEngine_Events_UnityEventBase.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Unity.VisualScripting.Generated/VisualScripting.Core/Property Providers/PropertyProvider_UnityEngine_Events_UnityEventBase.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Unity.VisualScripting.Generated/VisualScripting.Core/Property Providers/PropertyProvider_UnityEngine_ParticleSystem_MinMaxCurve.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Unity.VisualScripting.Generated/VisualScripting.Core/Property Providers/PropertyProvider_UnityEngine_ParticleSystem_MinMaxCurve.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Unity.VisualScripting.Generated/VisualScripting.Core/Property Providers/PropertyProvider_UnityEngine_ParticleSystem_MinMaxGradient.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Unity.VisualScripting.Generated/VisualScripting.Core/Property Providers/PropertyProvider_UnityEngine_ParticleSystem_MinMaxGradient.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Unity.VisualScripting.Generated/VisualScripting.Core/Property Providers/PropertyProvider_UnityEngine_Quaternion.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Unity.VisualScripting.Generated/VisualScripting.Core/Property Providers/PropertyProvider_UnityEngine_Quaternion.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Unity.VisualScripting.Generated/VisualScripting.Core/Property Providers/PropertyProvider_UnityEngine_TextCore_Glyph.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Unity.VisualScripting.Generated/VisualScripting.Core/Property Providers/PropertyProvider_UnityEngine_TextCore_Glyph.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Unity.VisualScripting.Generated/VisualScripting.Core/Property Providers/PropertyProvider_UnityEngine_TextCore_GlyphMetrics.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Unity.VisualScripting.Generated/VisualScripting.Core/Property Providers/PropertyProvider_UnityEngine_TextCore_GlyphMetrics.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Unity.VisualScripting.Generated/VisualScripting.Core/Property Providers/PropertyProvider_UnityEngine_TextCore_GlyphRect.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Unity.VisualScripting.Generated/VisualScripting.Core/Property Providers/PropertyProvider_UnityEngine_TextCore_GlyphRect.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Unity.VisualScripting.Generated/VisualScripting.Core/Property Providers/PropertyProvider_UnityEngine_TextCore_LowLevel_GlyphPairAdjustmentRecord.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Unity.VisualScripting.Generated/VisualScripting.Core/Property Providers/PropertyProvider_UnityEngine_TextCore_LowLevel_GlyphPairAdjustmentRecord.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Unity.VisualScripting.Generated/VisualScripting.Core/Property Providers/PropertyProvider_UnityEngine_TextCore_Text_Character.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Unity.VisualScripting.Generated/VisualScripting.Core/Property Providers/PropertyProvider_UnityEngine_TextCore_Text_Character.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Unity.VisualScripting.Generated/VisualScripting.Core/Property Providers/PropertyProvider_UnityEngine_TextCore_Text_FontWeightPair.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Unity.VisualScripting.Generated/VisualScripting.Core/Property Providers/PropertyProvider_UnityEngine_TextCore_Text_FontWeightPair.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Unity.VisualScripting.Generated/VisualScripting.Core/Property Providers/PropertyProvider_UnityEngine_TextCore_Text_SpriteCharacter.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Unity.VisualScripting.Generated/VisualScripting.Core/Property Providers/PropertyProvider_UnityEngine_TextCore_Text_SpriteCharacter.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Unity.VisualScripting.Generated/VisualScripting.Core/Property Providers/PropertyProvider_UnityEngine_TextCore_Text_SpriteGlyph.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Unity.VisualScripting.Generated/VisualScripting.Core/Property Providers/PropertyProvider_UnityEngine_TextCore_Text_SpriteGlyph.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Unity.VisualScripting.Generated/VisualScripting.Core/Property Providers/PropertyProvider_UnityEngine_TextCore_Text_TextStyle.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Unity.VisualScripting.Generated/VisualScripting.Core/Property Providers/PropertyProvider_UnityEngine_TextCore_Text_TextStyle.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Unity.VisualScripting.Generated/VisualScripting.Core/Property Providers/PropertyProvider_UnityEngine_TextCore_Text_UnicodeLineBreakingRules.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Unity.VisualScripting.Generated/VisualScripting.Core/Property Providers/PropertyProvider_UnityEngine_TextCore_Text_UnicodeLineBreakingRules.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Unity.VisualScripting.Generated/VisualScripting.Core/Property Providers/PropertyProvider_UnityEngine_UI_AnimationTriggers.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Unity.VisualScripting.Generated/VisualScripting.Core/Property Providers/PropertyProvider_UnityEngine_UI_AnimationTriggers.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Unity.VisualScripting.Generated/VisualScripting.Core/Property Providers/PropertyProvider_UnityEngine_UI_Button_ButtonClickedEvent.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Unity.VisualScripting.Generated/VisualScripting.Core/Property Providers/PropertyProvider_UnityEngine_UI_Button_ButtonClickedEvent.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Unity.VisualScripting.Generated/VisualScripting.Core/Property Providers/PropertyProvider_UnityEngine_UI_ColorBlock.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Unity.VisualScripting.Generated/VisualScripting.Core/Property Providers/PropertyProvider_UnityEngine_UI_ColorBlock.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Unity.VisualScripting.Generated/VisualScripting.Core/Property Providers/PropertyProvider_UnityEngine_UI_Dropdown_DropdownEvent.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Unity.VisualScripting.Generated/VisualScripting.Core/Property Providers/PropertyProvider_UnityEngine_UI_Dropdown_DropdownEvent.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Unity.VisualScripting.Generated/VisualScripting.Core/Property Providers/PropertyProvider_UnityEngine_UI_Dropdown_OptionDataList.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Unity.VisualScripting.Generated/VisualScripting.Core/Property Providers/PropertyProvider_UnityEngine_UI_Dropdown_OptionDataList.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Unity.VisualScripting.Generated/VisualScripting.Core/Property Providers/PropertyProvider_UnityEngine_UI_FontData.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Unity.VisualScripting.Generated/VisualScripting.Core/Property Providers/PropertyProvider_UnityEngine_UI_FontData.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Unity.VisualScripting.Generated/VisualScripting.Core/Property Providers/PropertyProvider_UnityEngine_UI_InputField_EndEditEvent.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Unity.VisualScripting.Generated/VisualScripting.Core/Property Providers/PropertyProvider_UnityEngine_UI_InputField_EndEditEvent.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Unity.VisualScripting.Generated/VisualScripting.Core/Property Providers/PropertyProvider_UnityEngine_UI_InputField_OnChangeEvent.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Unity.VisualScripting.Generated/VisualScripting.Core/Property Providers/PropertyProvider_UnityEngine_UI_InputField_OnChangeEvent.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Unity.VisualScripting.Generated/VisualScripting.Core/Property Providers/PropertyProvider_UnityEngine_UI_InputField_SubmitEvent.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Unity.VisualScripting.Generated/VisualScripting.Core/Property Providers/PropertyProvider_UnityEngine_UI_InputField_SubmitEvent.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Unity.VisualScripting.Generated/VisualScripting.Core/Property Providers/PropertyProvider_UnityEngine_UI_MaskableGraphic_CullStateChangedEvent.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Unity.VisualScripting.Generated/VisualScripting.Core/Property Providers/PropertyProvider_UnityEngine_UI_MaskableGraphic_CullStateChangedEvent.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Unity.VisualScripting.Generated/VisualScripting.Core/Property Providers/PropertyProvider_UnityEngine_UI_Navigation.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Unity.VisualScripting.Generated/VisualScripting.Core/Property Providers/PropertyProvider_UnityEngine_UI_Navigation.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Unity.VisualScripting.Generated/VisualScripting.Core/Property Providers/PropertyProvider_UnityEngine_UI_ScrollRect_ScrollRectEvent.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Unity.VisualScripting.Generated/VisualScripting.Core/Property Providers/PropertyProvider_UnityEngine_UI_ScrollRect_ScrollRectEvent.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Unity.VisualScripting.Generated/VisualScripting.Core/Property Providers/PropertyProvider_UnityEngine_UI_Scrollbar_ScrollEvent.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Unity.VisualScripting.Generated/VisualScripting.Core/Property Providers/PropertyProvider_UnityEngine_UI_Scrollbar_ScrollEvent.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Unity.VisualScripting.Generated/VisualScripting.Core/Property Providers/PropertyProvider_UnityEngine_UI_Slider_SliderEvent.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Unity.VisualScripting.Generated/VisualScripting.Core/Property Providers/PropertyProvider_UnityEngine_UI_Slider_SliderEvent.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Unity.VisualScripting.Generated/VisualScripting.Core/Property Providers/PropertyProvider_UnityEngine_UI_SpriteState.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Unity.VisualScripting.Generated/VisualScripting.Core/Property Providers/PropertyProvider_UnityEngine_UI_SpriteState.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Unity.VisualScripting.Generated/VisualScripting.Core/Property Providers/PropertyProvider_UnityEngine_UI_Toggle_ToggleEvent.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Unity.VisualScripting.Generated/VisualScripting.Core/Property Providers/PropertyProvider_UnityEngine_UI_Toggle_ToggleEvent.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Unity.VisualScripting.Generated/VisualScripting.Core/Property Providers/PropertyProvider_Unity_Mathematics_bool2.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Unity.VisualScripting.Generated/VisualScripting.Core/Property Providers/PropertyProvider_Unity_Mathematics_bool2.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Unity.VisualScripting.Generated/VisualScripting.Core/Property Providers/PropertyProvider_Unity_Mathematics_bool2x2.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Unity.VisualScripting.Generated/VisualScripting.Core/Property Providers/PropertyProvider_Unity_Mathematics_bool2x2.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Unity.VisualScripting.Generated/VisualScripting.Core/Property Providers/PropertyProvider_Unity_Mathematics_quaternion.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Unity.VisualScripting.Generated/VisualScripting.Core/Property Providers/PropertyProvider_Unity_Mathematics_quaternion.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.TestArea/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TestArea/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Character/AttackTrigger.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Character/AttackTrigger.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AttackerData.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AttackerData.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Character/AttackTrigger.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Character/AttackTrigger.cs.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Character/Attacker.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Character/Attacker.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Character/CharacterAnimation.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Character/CharacterAnimationSystem.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Character/CharacterAnimation.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Character/CharacterAnimationSystem.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Character/AttackerData.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Character/AttackerData.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Character/BehaviourNode.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Character/BehaviourNode.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Character/BehaviourTree.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Character/BehaviourTree.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Character/Character.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Character/Character.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Character/CharacterAnimationSystem.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Character/CharacterAnimationSystem.cs.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Character/CharacterMoveWithNavMesh.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Character/CharacterMoveWithNavMesh.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Character/Health.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Character/HealthSystem.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Character/Health.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Character/HealthSystem.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Character/IAnimable.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Character/IAnimable.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Character/IDamageable.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Character/IDamageable.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Character/IInitializable.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Character/IInitializable.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Character/EnemyBase.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Character/EnemyBase.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Character/HealthSystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Character/HealthSystem.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Character/IAnimable.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Character/IAnimable.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Character/IDamageable.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Character/IDamageable.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Character/IInitializable.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Character/IInitializable.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Character/IMoveable.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Character/IMoveable.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Character/MoveData.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Character/MoveData.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Character/ParticleAnim.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Character/ParticleAnim.cs.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Character/StandartEnemy.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Character/StandartEnemy.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MoveData.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/MoveData.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Test.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Test.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/VisualScriptingSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/VisualScriptingSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Unity.VisualScripting.Generated/VisualScripting.Flow/UnitOptions.db" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Unity.VisualScripting.Generated/VisualScripting.Flow/UnitOptions.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/CurrentMaximizeLayout.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/CurrentMaximizeLayout.dwlt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -36,16 +303,22 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Assets/Character/Character.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/9384495d2a482ac7341d67ca84e16d267d16c62458a9d67a92b119199a9/System.Threading.Tasks.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Character/VisualScripting/SearchTarget.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.visualscripting@1.7.8/Runtime/VisualScripting.Core/Ensure/EnsureThat.Types.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.visualscripting@1.7.8/Runtime/VisualScripting.Core/Graphs/GraphElement.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.visualscripting@1.7.8/Runtime/VisualScripting.Core/Reflection/Optimization/StaticActionInvoker_1.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.visualscripting@1.7.8/Runtime/VisualScripting.Flow/Flow.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.visualscripting@1.7.8/Runtime/VisualScripting.Flow/FlowGraph.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.visualscripting@1.7.8/Runtime/VisualScripting.Flow/Framework/Control/ToggleValue.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.visualscripting@1.7.8/Runtime/VisualScripting.Flow/Ports/ValueInput.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.visualscripting@1.7.8/Runtime/VisualScripting.Flow/Unit.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectId" id="2JaW0zp37BRU6OHm1Xs4IPO1thc" />
   <component name="ProjectLevelVcsManager">
@@ -57,6 +330,7 @@
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
     &quot;Discover.Launch.Via.Unity&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
@@ -139,6 +413,19 @@
       <workItem from="1675620668891" duration="50000" />
       <workItem from="1675636432314" duration="296000" />
       <workItem from="1675636747613" duration="42000" />
+      <workItem from="1675680334460" duration="383000" />
+      <workItem from="1675681369928" duration="381000" />
+      <workItem from="1675681772494" duration="40000" />
+      <workItem from="1675681834449" duration="178000" />
+      <workItem from="1675683741900" duration="215000" />
+      <workItem from="1675684173120" duration="67000" />
+      <workItem from="1675684249935" duration="942000" />
+      <workItem from="1675685212800" duration="783000" />
+      <workItem from="1675691431684" duration="737000" />
+      <workItem from="1675693853569" duration="7942000" />
+      <workItem from="1675777673835" duration="1703000" />
+      <workItem from="1675807303511" duration="6665000" />
+      <workItem from="1675852460022" duration="4538000" />
     </task>
     <servers />
   </component>
@@ -160,6 +447,7 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
   </component>
 </project>
