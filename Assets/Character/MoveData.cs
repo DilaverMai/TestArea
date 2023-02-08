@@ -7,5 +7,6 @@ namespace Character
     {
         public float Speed;
         public float StoppingDistance;
+        public float RotationSpeed;
     }
 }

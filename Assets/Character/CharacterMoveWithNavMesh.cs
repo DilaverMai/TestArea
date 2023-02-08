@@ -21,6 +21,7 @@ namespace Character
         {
             NavAgent.speed = MoveData.Speed;
             NavAgent.stoppingDistance = MoveData.StoppingDistance;
+            NavAgent.angularSpeed = MoveData.RotationSpeed;
         }
 
         public virtual void Move(Vector3 position)

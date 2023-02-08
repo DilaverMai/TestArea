@@ -6,4 +6,5 @@ public interface IFinder<out T>
     public Vector3 GetTargetPosition();
     public void AfterFind();
     public void Reset();
+    public float TargetDistance { get; }
 }

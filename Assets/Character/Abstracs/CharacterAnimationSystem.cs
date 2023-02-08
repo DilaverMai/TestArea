@@ -1,4 +1,5 @@
 using System;
+using Sirenix.OdinInspector;
 using UnityEngine;
 
 namespace Character
@@ -6,7 +7,9 @@ namespace Character
     [Serializable]
     public abstract class CharacterAnimationSystem<T>:MonoBehaviour,IAnimable<T> where T:Enum
     {
+        [BoxGroup("Current Datas")]
         public Animator Anim;
+        [BoxGroup("Current Datas")]
         public ParticleAnim<T>[] ParticleAnims;
         private bool _isAnimNull => Anim == null;
         

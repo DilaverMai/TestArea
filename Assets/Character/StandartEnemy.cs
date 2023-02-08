@@ -1,25 +1,10 @@
-using System;
 using Sirenix.OdinInspector;
-using Unity.VisualScripting;
-using UnityEditor.Rendering.Universal;
-using UnityEngine;
+using UnityEngine.Serialization;
 
 namespace Character
 {
     public class StandartEnemy : EnemyBase
     {
-        [BoxGroup("Modeling")]
-        public Transform Model3D;
-        
-        [Button("Create Model"), BoxGroup("Modeling")]
-        public void CreateModel()
-        {
-            var model = Instantiate(Model3D, transform);
-            model.AddComponent<Animator>();
-            model.localPosition = Vector3.zero;
-            model.localRotation = Quaternion.identity;
-        }
-        
         [BoxGroup("Systems"),ReadOnly]
         public HealthSystem HealthSystem;
         [BoxGroup("Systems"),ReadOnly]
@@ -28,10 +13,11 @@ namespace Character
         public EnemyAnimationSystem AnimationSystemSystem;
         [BoxGroup("Systems"),ReadOnly]
         public CharacterMoveWithNavMeshAndRoute MoveSystem;
-        [BoxGroup("Systems"),ReadOnly]
-        public PlayerFinder Finder;
+        [FormerlySerializedAs("finderWithTag")] [FormerlySerializedAs("Finder")] [BoxGroup("Systems"),ReadOnly]
+        public DamageableFinderWithLayer finderWithLayer;
 
         private IUpdater[] _updaters;
+
         
         public override void OnSpawn()
         {
@@ -46,20 +32,23 @@ namespace Character
 
         private void Update()
         {
-            var find = Finder.FindTarget();
+            var find = finderWithLayer.FindTarget();
 
             if (find != null)
             {
-                MoveSystem.Move(Finder.GetTargetPosition());
+                MoveSystem.Move(finderWithLayer.GetTargetPosition());
                 if(MoveSystem.ReachedDestination())
-                    AttackSystem.Attack(Finder.FindTarget());
+                    AttackSystem.Attack(finderWithLayer.FindTarget(), finderWithLayer.TargetDistance);
             }
             else MoveSystem.RouteMover();
+            
+            foreach (var updater in _updaters)
+                updater.OnUpdate();
         }
 
         private void Initialize()
         {
-            Finder = GetComponent<PlayerFinder>();
+            finderWithLayer = GetComponent<DamageableFinderWithLayer>();
             HealthSystem = GetComponent<HealthSystem>();
             AttackSystem = GetComponent<Attacker>();
             AnimationSystemSystem = GetComponent<EnemyAnimationSystem>();
@@ -72,6 +61,7 @@ namespace Character
 
         public void AllRunInitialize()
         {
+            _updaters = GetComponentsInChildren<IUpdater>();
             var componentsInChildren = GetComponentsInChildren<IInitializable>();
             
             foreach (var init in componentsInChildren)

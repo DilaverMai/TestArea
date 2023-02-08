@@ -14,3 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Speed: 3
   StoppingDistance: 2.5
+  RotationSpeed: 100
