@@ -1,3 +1,4 @@
+using Sirenix.OdinInspector;
 using UnityEngine;
 using UnityEngine.AI;
 using UnityEngine.Events;
@@ -8,8 +9,11 @@ namespace Character
     [System.Serializable]
     public class CharacterMoveWithNavMesh:MonoBehaviour, IInitializable, IMoveable
     {
+        [BoxGroup("Data")]
         public MoveData MoveData;
+        [BoxGroup("Data")]
         public NavMeshAgent NavAgent;
+        [BoxGroup("Event")]
         public UnityEvent OnReachedDestination;
 
         private void Awake()

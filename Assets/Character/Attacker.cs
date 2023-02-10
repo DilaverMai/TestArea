@@ -42,8 +42,9 @@ namespace Character
             attackDelay = new WaitForSeconds(attackerData.AttackDelay);
         }
 
-        private void OnDrawGizmos()
+        public virtual void OnDrawGizmos()
         {
+            if(attackerData == null) return;
             Handles.color = Color.red;
             Handles.DrawWireDisc(transform.position, Vector3.up, attackerData.AttackRange, 10f);
         }
