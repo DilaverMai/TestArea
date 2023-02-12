@@ -10,6 +10,15 @@ namespace Character
         Friendly,
         Enemy
     }
+    
+    public enum CharacterStates
+    {
+        Idle,
+        Move,
+        Attack,
+        Die
+    }
+    
     public abstract class CharacterBase: MonoBehaviour
     {
         [BoxGroup("Modeling")]
@@ -26,6 +35,8 @@ namespace Character
         
         [BoxGroup("Character")]
         public CharacterTypes CharacterType;
+        [BoxGroup("Character")]
+        public CharacterStates CharacterState;
         protected virtual void OnEnable()
         {
             OnSpawn();

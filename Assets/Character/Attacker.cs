@@ -9,7 +9,7 @@ namespace Character
     [System.Serializable]
     public class Attacker :MonoBehaviour, IAttackable,IInitializable
     {
-        [BoxGroup("Current Data")]
+        [BoxGroup("Data")]
         public AttackerData attackerData;
         [BoxGroup("Events")]
         public UnityEvent OnAttack;
@@ -21,14 +21,14 @@ namespace Character
 
         private WaitForSeconds attackDelay;
         
-        public void Attack(IDamageable healthSystem,float targetDistance = 0)
+        public virtual void Attack(IDamageable healthSystem,float targetDistance = 0)
         {
             if(_attackCoroutine != null) return;
             if(targetDistance > attackerData.AttackRange) return;
             _attackCoroutine = StartCoroutine(AttackCoroutine(healthSystem));
         }
         
-        public IEnumerator AttackCoroutine(IDamageable healthSystem)
+        public virtual IEnumerator AttackCoroutine(IDamageable healthSystem)
         {
             healthSystem.TakeDamage(ref healthSystem,attackerData.Damage,ref CharacterType);
             OnAttack?.Invoke();
@@ -36,7 +36,7 @@ namespace Character
             _attackCoroutine = null;
         }
 
-        public void Initialize()
+        public virtual void Initialize()
         {
             CharacterType = GetComponent<CharacterBase>().CharacterType;
             attackDelay = new WaitForSeconds(attackerData.AttackDelay);

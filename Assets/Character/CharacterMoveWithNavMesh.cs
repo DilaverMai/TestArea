@@ -1,3 +1,4 @@
+using System.Collections;
 using Sirenix.OdinInspector;
 using UnityEngine;
 using UnityEngine.AI;
@@ -38,6 +39,13 @@ namespace Character
             OnReachedDestination?.Invoke();
             return NavAgent.remainingDistance <= NavAgent.stoppingDistance;
         }
+        public void JumpBack(Vector3 centerPoint)
+        {
+            NavAgent.enabled = false;
+            transform.position = centerPoint + (transform.position - centerPoint).normalized * 10;
+            NavAgent.enabled = true;
+        }
+        
     }
     
 }
